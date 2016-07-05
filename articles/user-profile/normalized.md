@@ -41,7 +41,7 @@ The `identities` array contains the following attributes:
 
 When outsourcing user authentication, there generally is no need to keep a Users/Passwords table. Even so, you might still want to associate application data to authenticated users.
 
-For example, you could have a **Users table** that would have a copy of each user authenticated by Auth0. Every time a users logs in, you would search the table for that user. If the user does not exist, you would create a new record. If it does exist, you would update all fields, essentially keeping a local copy of the user data.
+For example, you could have a **Users table** that would have a copy of each user authenticated by Auth0. Every time a user logs in, you would search the table for that user. If the user does not exist, you would create a new record. If it does exist, you would update all fields, essentially keeping a local copy of the user data.
 
 Alternatively, you might store the user identifier on each table/collection that has user-associated data. For smaller applications, that's often simpler to implement.
 
